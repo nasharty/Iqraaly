@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmed.iqraaly.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/coverPhoto"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_icon"
+        android:drawablePadding="5dp"
+        android:textColor="@color/default_orange"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/narrator"
+        app:layout_constraintStart_toEndOf="@id/coverPhoto"
+        tools:text="zidane" />
+
+    <TextView
+        android:id="@+id/narrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_icon"
+        android:drawablePadding="5dp"
+        android:textColor="@color/default_orange"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/coverPhoto"
+        app:layout_constraintStart_toEndOf="@id/coverPhoto"
+        app:layout_constraintTop_toTopOf="@id/coverPhoto"
+        tools:text="irqraaly team" />
+
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_icon"
+        android:drawablePadding="5dp"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/coverPhoto"
+        app:layout_constraintTop_toBottomOf="@id/narrator"
+        tools:text="dar elshrouk" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coverPhoto"
+        android:layout_margin="15dp"/>
+
+</android.support.constraint.ConstraintLayout>
